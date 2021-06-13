@@ -1,20 +1,18 @@
+import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
-        Test t1 = new Test();
-        Test t2 = new Test();
-        Test t3 = new Test();
+        CustomStack<Integer> stack = new CustomStack();
+        stack.push(3);
+        stack.push(0);
+        stack.push(2);
 
-        StackCustom<Test> custom = new StackCustom<>(3);
-        custom.addInTop(t1);
-        custom.addInTop(t2);
-        custom.addInTop(t3);
-
-
-        for (Object q : custom) {
-            System.out.println(q);
-        }
+        System.out.println(stack.peek() + " " + stack);
 
 
     }
+}
+
+class Test {
+
 }
